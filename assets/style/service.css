@@ -1,0 +1,165 @@
+
+
+/* ==========================================
+   PREMIUM SERVICES SECTION STYLING
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&family=Poppins:wght@600;700;800&family=Inter:wght@400;500&display=swap');
+
+.services-wrapper {
+  padding: 90px 0;
+  background-color: #fcfcfc;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header Context styling */
+.services-header {
+  margin-bottom: 65px;
+}
+
+.services-badge {
+  background-color: rgba(0, 169, 203, 0.1);
+  color: #00a9cb;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: 'Kantumruy Pro', 'Poppins', sans-serif;
+}
+
+.services-main-title {
+  font-family: 'Kantumruy Pro', sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: #222222;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.services-header .eng-title-accent {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #00a9cb;
+  margin-top: 10px;
+}
+
+.highlight-yellow {
+  background: linear-gradient(180deg, transparent 62%, #d4e815 62%);
+  padding: 0 4px;
+}
+
+/* Grid Configuration */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+  padding: 0 15px;
+}
+
+/* Individual Service Cards Layout */
+.service-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  padding: 40px 30px;
+  text-align: left;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-img-holder {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.service-icon-floating {
+  max-width: 42px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Card Card Typography */
+.card-kh-title {
+  font-family: 'Kantumruy Pro', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111111;
+  margin: 0 0 16px 0;
+}
+
+.card-en-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  color: #00a9cb;
+  display: block;
+  margin-top: 4px;
+}
+
+.card-kh-desc {
+  font-family: 'Kantumruy Pro', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444444;
+  margin-bottom: 8px;
+}
+
+.card-en-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #777777;
+  margin-bottom: 25px;
+}
+
+.service-action-link {
+  font-family: 'Kantumruy Pro', 'Poppins', sans-serif;
+  color: #ff4a83; /* Matching your theme pink accent */
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+/* Hover Interactive Mechanics */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 169, 203, 0.08);
+  border-color: rgba(0, 169, 203, 0.15);
+}
+
+.service-card:hover .service-img-holder {
+  background-color: #ff4a83;
+}
+
+.service-card:hover .service-icon-floating {
+  transform: scale(1.1) rotate(4deg);
+  filter: brightness(0) invert(1); /* Turns icons white over pink background hover */
+}
+
+.service-card:hover .service-action-link {
+  transform: translateX(6px);
+  color: #00a9cb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services-main-title { font-size: 2rem; }
+  .services-header .eng-title-accent { font-size: 1.8rem; }
+  .services-wrapper { padding: 60px 0; }
+  .service-card { padding: 30px 20px; }
+}
